@@ -51,6 +51,7 @@ public class CategoryController {
 	@GetMapping("/{pageNumber}/{firter}/{searchParam}")
 	public String search(Model model, @PathVariable Integer pageNumber, @PathVariable String firter,
 			@PathVariable String searchParam) {
+
 		// 페이징 처리(현제 페이지, 게시물 수, 정렬(내림,오름 차순), 정렬 기준)
 		Pageable pageable = new PageRequest(pageNumber - 1, pageSize, Direction.DESC, "number");
 		// 페이징 처리된 데이터 조회 [제목으로 검색, 내용으로 검색]

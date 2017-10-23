@@ -104,13 +104,13 @@ public class ProductController {
 
 		// 업로드 파일이 저장될 경로
 		// 카페24
-		String uploadFilepath = "/home/hosting_users/jbs1995/tomcat/webapps/ROOT/upload";
+		// String uploadFilepath =
+		// "/home/jbs/jbs1995/tomcat/webapps/ROOT/upload";
 		// 윈도우
 		// String uploadFilepath =
 		// "C:/DevelopmentTools/apache-tomcat-8.0.29/webapps/ROOT/upload";
 		// 리눅스 일 경우
-		// String uploadFilepath =
-		// "/home/userj/apache-tomcat-8.5.6/webapps/ROOT/upload";
+		String uploadFilepath = "/home/jbs/apache-tomcat-8.5.6/webapps/ROOT/upload";
 
 		// 업로드 파일이 저장될 디렉토리 없을 경우 디렉토리 생성
 		fileExce(uploadFilepath);

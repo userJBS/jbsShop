@@ -13,7 +13,8 @@
 	// 검색 실행
 	function search() {
 		searchParam = $('#searchParam').val();
-		if (searchParam.length > 0) {
+		// 검색할때 공백을 검색할수 없고 글자수 1자 이상이여야함.
+		if (searchParam.replace(/^\s*/, "").length > 0) {
 			location.href = "/category/1/" + firter + "/" + searchParam;
 		}
 	}
