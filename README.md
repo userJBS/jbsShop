@@ -40,9 +40,40 @@
 
 ![3](http://postfiles5.naver.net/MjAxNzEwMTZfNjIg/MDAxNTA4MTY1NzYyMjY4.W1u1Yy5bXYDA0yiFKF0evUEghH2bqPc7Vtkwxb_Su5Ig.pvL-_Ap3ceSoxduYh7NUEmkmFu032cbgEtSSOaClwGYg.JPEG.awef5643f/5.JPG?type=w1)
 
+카테고리 썸네일
+
+
 * 상품 등록 화면 (pc웹)
 
 ![4](http://postfiles12.naver.net/MjAxNzEwMTZfMyAg/MDAxNTA4MTY1NzYyNDI1.62pHtIDz-ehGeVWdOdL7UkkURuED-UZx759xye3WE30g.NEgCKIc8flGPVVSe7NUdNOD8r8I5wJLU-Ays4j5kACcg.JPEG.awef5643f/8.JPG?type=w1)
+
+
+상품 썸네일 처리 코드  
+ 설명) 상품관련 데이터를 저장할때 상품 내용에 등록된 첫번째 이미지를 가져와 썸네일로 지정
+
+	```
+
+	// 내용 값 저장할때 썸네일 이미지도 함께 지정
+	public void setContents(String contents) {
+		this.contents = contents;
+		this.img = findByImg(contents);
+	}
+
+	// 글에서 이미지 파일이 있을경우 썸네일 지정(상품 내용에 있는 첫번째 이미지를 썸내일로 지정한다.)
+	private String findByImg(String imgFind) {
+		int startImgFind = imgFind.indexOf("<img src=");
+		if (startImgFind > 0) {
+			imgFind = imgFind.substring(startImgFind + 10);
+			int endImgFind = imgFind.indexOf("\"");
+			imgFind = imgFind.substring(0, endImgFind);
+		} else {
+			// 상품 이미지가 없을 경우 썸내일 파일 주소
+			imgFind = "/img/noImg.jpg";
+		}
+		return imgFind;
+	}
+
+	```
 
 * 상품 보기 화면(pc웹)
 
