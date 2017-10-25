@@ -6,7 +6,7 @@
 * 2017.08.03 ~ 2017.10.11
 
 ## 개발 동기 
-* youTube에 올라온 박재성이라는 웹 개발자가 강의한 자바 웹 애플리케이션 과정을 듣게된후 Spring boot,JPA를 사용
+* youTube에 올라온 [박재성이라는 웹 개발자가 강의]( https://www.youtube.com/watch?v=JUKehW-c484&index=1&list=PLqaSEyuwXkSppQAjwjXZgKkjWbFoUdNXC)한 자바 웹 애플리케이션 과정을 듣게된후 Spring boot,JPA를 사용
 
 한 빠른 개발에 즐거움을 느끼기 되어 호기심에 만들어 보게 되었다.
 
@@ -19,7 +19,7 @@
 * 백 엔드 : Spring Boot (SpringDataJPA)
 * DB 	 : H2 
 * 빌드	 : Maven
-* 서버	 : 카페 24 Tomcat JSP광호스팅
+* 서버	 : Ubuntu 14.04
 * 프론트 엔드 : Bootstrap、mustache, AJAX
 * 기타 api : 네이버 로그인, 카카오 로그인, 네이버 스마트 에디터
 * 툴 : spring-tool-suite(이클립스)
