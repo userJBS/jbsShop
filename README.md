@@ -40,8 +40,6 @@
 
 ![3](http://postfiles5.naver.net/MjAxNzEwMTZfNjIg/MDAxNTA4MTY1NzYyMjY4.W1u1Yy5bXYDA0yiFKF0evUEghH2bqPc7Vtkwxb_Su5Ig.pvL-_Ap3ceSoxduYh7NUEmkmFu032cbgEtSSOaClwGYg.JPEG.awef5643f/5.JPG?type=w1)
 
-카테고리 썸네일
-
 
 * 상품 등록 화면 (pc웹)
 
