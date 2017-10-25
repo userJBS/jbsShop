@@ -110,7 +110,7 @@ public class ProductController {
 		// String uploadFilepath =
 		// "C:/DevelopmentTools/apache-tomcat-8.0.29/webapps/ROOT/upload";
 		// 리눅스 일 경우
-		String uploadFilepath = "/home/jbs/apache-tomcat-8.5.6/webapps/ROOT/upload";
+		String uploadFilepath = "/home/jbs/apache-tomcat-8.0.29/webapps/ROOT/upload";
 
 		// 업로드 파일이 저장될 디렉토리 없을 경우 디렉토리 생성
 		fileExce(uploadFilepath);
